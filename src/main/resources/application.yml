@@ -2,7 +2,7 @@
 
 spring:
   datasource:
-    url: jdbc:h2:~/querydsl
+    url: jdbc:h2:tcp://localhost/~/querydsl
     username: sa
     password:
     driver-class-name: org.h2.Driver
@@ -14,6 +14,7 @@ spring:
       hibernate:
         #        show_sql: true    #System.out ??
         format_sql: true
+        use_sql_comments: true #jpql
 
 logging:
   level:
