@@ -44,3 +44,10 @@ member.username.startsWith("member") //like ‘member%’ 검색
 - `fetchResults()` : 페이징 정보 포함, total count 쿼리 추가 실행
 - `fetchCount()` : count 쿼리로 변경해서 count 수 조회
 
+
+### 프로젝션 결과반환
+
+- 프로젝션 대상이 하나면 타입을 명확하게 지정할 수 있음
+- 프로젝션 대상이 둘 이상이면 튜플이나 **DTO**로 조회
+
+> 튜플은 Repository 안에서 사용을 권장하며, DTO 를통해 외부로 전달
