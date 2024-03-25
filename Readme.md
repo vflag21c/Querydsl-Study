@@ -51,3 +51,8 @@ member.username.startsWith("member") //like ‘member%’ 검색
 - 프로젝션 대상이 둘 이상이면 튜플이나 **DTO**로 조회
 
 > 튜플은 Repository 안에서 사용을 권장하며, DTO 를통해 외부로 전달
+
+
+### fetchResults() -> deprecated
+>fetchResult 는 Querydsl 내부에서 count 용 쿼리를 만들어서 실행해야 하는데, 이때 작성한 쿼리 기반으로
+> count 쿼리를 만들어냄, 단순한 쿼리에서는 작동하지만 복잡한 쿼리에서는 잘 동작하지 않음. --> total 별도 쿼리 작성 권장
